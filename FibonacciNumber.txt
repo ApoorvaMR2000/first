@@ -1,0 +1,19 @@
+
+const number = parseInt(prompt('Enter a positive number: '));
+let f1 = 0, f2 = 1, fibn;
+
+console.log('Fibonacci Series:');
+console.log(f1); // print 0
+console.log(f2); // print 1
+
+fibn = f1 + f2;
+
+while (fibn <= number) {
+
+    // print the next term
+    console.log(fibn);
+
+    f1 = f2;
+    f2 = fibn;
+    fibn = f1 + f2;
+}
